@@ -31,3 +31,28 @@ def largest(nums):
     
     
 largest([1, 2, 42, 4, 12])
+
+'''
+
+3. Write a function named occurancesthat takes two string arguments as input and counts the number of occurances of the second string inside the first string.
+
+For example:
+
+occurances('fleep floop', 'e')   # returns 2
+occurances('fleep floop', 'p')   # returns 2
+occurances('fleep floop', 'ee')  # returns 1
+occurances('fleep floop', 'fe')  # returns 0
+
+'''
+
+def occurances(str, sub):
+    count = 0
+    for i in range(len(str)):
+        if str[i:].startswith(sub):
+         count += 1
+    return print(count)
+    
+occurances('fleep floop', 'e')
+occurances('fleep floop', 'p')
+occurances('fleep floop', 'ee')
+occurances('fleep floop', 'fe')
